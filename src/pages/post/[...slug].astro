@@ -1,0 +1,44 @@
+---
+import { render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+import { getLocalBlogPosts } from '../../data/local-blog';
+
+export async function getStaticPaths() {
+	const posts = await getLocalBlogPosts();
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post.entry);
+---
+
+<BlogPost
+	title={post.title}
+	description={post.description}
+	pubDate={post.pubDate}
+	updatedDate={post.updatedDate}
+>
+	<div class="post-content">
+		<Content />
+	</div>
+</BlogPost>
+
+<style>
+	.post-content :global(img) {
+		max-width: 100%;
+		height: auto;
+		border-radius: 12px;
+	}
+
+	.post-content :global(ul),
+	.post-content :global(ol) {
+		padding-left: 1.5em;
+	}
+
+	.post-content :global(li) + :global(li) {
+		margin-top: 0.35em;
+	}
+</style>
