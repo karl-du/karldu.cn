@@ -49,17 +49,3 @@ export async function getLocalBlogPosts(): Promise<LocalBlogPost[]> {
 		entry,
 	}));
 }
-
-export async function getLocalBlogPostById(id: string): Promise<LocalBlogPost | undefined> {
-	const entries = await loadEntries();
-	const entry = entries.find((item) => item.data.remoteId === id);
-
-	if (!entry) {
-		return undefined;
-	}
-
-	return {
-		...mapEntryToSummary(entry),
-		entry,
-	};
-}
