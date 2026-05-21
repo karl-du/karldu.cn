@@ -6,8 +6,6 @@ updatedDate: "2021-09-24T09:13:27.000Z"
 category: "JavaScript"
 tags:
   - "JavaScript"
-readingTimes: 8
-author: "Karl Du"
 remoteId: "1b139ef4-d1a6-46f9-8272-54fac6f466cb"
 ---
 # JavaScript的高阶函数

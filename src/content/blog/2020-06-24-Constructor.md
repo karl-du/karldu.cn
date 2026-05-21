@@ -7,8 +7,6 @@ category: "JavaScript"
 tags:
   - "JavaScript"
   - "构造函数"
-readingTimes: 28
-author: "Karl Du"
 remoteId: "48360977-0277-414f-93e1-dd745e25566f"
 ---
 ## Constructor 的作用

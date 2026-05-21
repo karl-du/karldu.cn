@@ -6,8 +6,6 @@ updatedDate: "2021-11-15T09:22:16.000Z"
 category: "JavaScript"
 tags:
   - "JavaScript"
-readingTimes: 54
-author: "Karl Du"
 remoteId: "edc5e453-3b8a-4f17-9647-57923522bdaa"
 ---
 ## 为什么要做插件化开发

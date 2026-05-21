@@ -8,8 +8,6 @@ tags:
   - "Git"
   - "Rebase"
   - "Merge"
-readingTimes: 62
-author: "Karl Du"
 remoteId: "05c1e435-e242-4d1c-b0ff-c90493fec6ce"
 ---
 ## 引言

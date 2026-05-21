@@ -10,8 +10,6 @@ export interface LocalBlogPostSummary {
 	updatedDate?: Date;
 	category?: string;
 	tags: string[];
-	readingTimes: number;
-	author: string;
 }
 
 export interface LocalBlogPost extends LocalBlogPostSummary {
@@ -27,8 +25,6 @@ function mapEntryToSummary(entry: BlogCollectionEntry): LocalBlogPostSummary {
 		updatedDate: entry.data.updatedDate,
 		category: entry.data.category,
 		tags: entry.data.tags,
-		readingTimes: entry.data.readingTimes,
-		author: entry.data.author,
 	};
 }
 

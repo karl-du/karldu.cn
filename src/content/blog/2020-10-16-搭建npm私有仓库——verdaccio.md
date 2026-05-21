@@ -8,8 +8,6 @@ tags:
   - "npm"
   - "verdaccio"
   - "环境搭建"
-readingTimes: 41
-author: "Karl Du"
 remoteId: "f3919168-6e0e-41f2-b8d8-acdfe33d7977"
 ---
 ## 前言

@@ -6,8 +6,6 @@ updatedDate: "2021-09-24T09:13:10.000Z"
 category: "JavaScript"
 tags:
   - "JavaScript"
-readingTimes: 11
-author: "Karl Du"
 remoteId: "6b0bd198-8d08-4c8d-8b74-e491622311cc"
 ---
 # JavaScript 运行时环境

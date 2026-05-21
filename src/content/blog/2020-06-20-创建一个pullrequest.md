@@ -7,8 +7,6 @@ category: "Git"
 tags:
   - "Git"
   - "pullrequest"
-readingTimes: 29
-author: "Karl Du"
 remoteId: "7bf32ae2-f29f-403f-8f42-892e8ef09e01"
 ---
 ## fork project

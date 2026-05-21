@@ -6,8 +6,6 @@ updatedDate: "2023-01-29T07:50:13.000Z"
 category: "JavaScript"
 tags:
   - "JavaScript"
-readingTimes: 7
-author: "Karl Du"
 remoteId: "10da84f8-f369-4816-ba8b-88ea05dcb2e4"
 ---
 最近刚好有空重温`JS`基础知识，于是我便把脑海里的内容写了出来。内容准确性应该没什么问题，大部分都是看黄皮书学到的。如果你是一个初学者，你不能指望通过本文寥寥几百字去掌握数据类型这一块内容，最好还是通过红皮书去系统性学习，结合黄皮书去查缺补漏。

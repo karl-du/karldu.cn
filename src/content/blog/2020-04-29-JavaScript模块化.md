@@ -9,8 +9,6 @@ tags:
   - "模块化"
   - "import"
   - "require"
-readingTimes: 15
-author: "Karl Du"
 remoteId: "a1a7d74a-3684-4877-992c-efa10d8ccf8e"
 ---
 ## 为什么需要模块化

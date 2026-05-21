@@ -6,8 +6,6 @@ updatedDate: "2022-05-12T14:39:10.000Z"
 category: "C#"
 tags:
   - "C#"
-readingTimes: 18
-author: "Karl Du"
 remoteId: "febdf780-81db-401d-92a0-b6e18197f55e"
 ---
 在`C#`中，数组、`ArrayList`、`List`都能够存储一组对象，那么他们的区别是什么呢？

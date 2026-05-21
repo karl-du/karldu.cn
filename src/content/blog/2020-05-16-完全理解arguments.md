@@ -6,8 +6,6 @@ updatedDate: "2021-09-24T09:12:29.000Z"
 category: "JavaScript"
 tags:
   - "JavaScript"
-readingTimes: 9
-author: "Karl Du"
 remoteId: "d5cbda56-fdc2-465c-8039-c2570a6cfc6d"
 ---
 # 完全理解 arguments

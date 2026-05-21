@@ -7,8 +7,6 @@ category: "JavaScript"
 tags:
   - "webpack"
   - "webpack-dev-server"
-readingTimes: 0
-author: "Karl Du"
 remoteId: "43003bda-50d9-4d7c-8dd0-dd382e0bb546"
 ---
 `webpack-dev-server`是我们在开发`nodejs`必须要掌握的工具，它可以帮助我们快速搭建开发环境。官网介绍如下
