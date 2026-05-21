@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-type BlogCollectionEntry = CollectionEntry<'blog'>;
+type CollectionName = 'blog' | 'declaration';
+type BlogCollectionEntry = CollectionEntry<'blog'> | CollectionEntry<'declaration'>;
 
 export interface LocalBlogPostSummary {
 	id: string;
@@ -28,18 +29,22 @@ function mapEntryToSummary(entry: BlogCollectionEntry): LocalBlogPostSummary {
 	};
 }
 
-async function loadEntries() {
-	const entries = await getCollection('blog');
+async function loadEntries(collection: CollectionName = 'blog') {
+	const entries = (await getCollection(collection)) as BlogCollectionEntry[];
 	return entries.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 }
 
-export async function getLocalBlogPostSummaries(): Promise<LocalBlogPostSummary[]> {
-	const entries = await loadEntries();
+export async function getLocalBlogPostSummaries(
+	collection: CollectionName = 'blog',
+): Promise<LocalBlogPostSummary[]> {
+	const entries = await loadEntries(collection);
 	return entries.map(mapEntryToSummary);
 }
 
-export async function getLocalBlogPosts(): Promise<LocalBlogPost[]> {
-	const entries = await loadEntries();
+export async function getLocalBlogPosts(
+	collection: CollectionName = 'blog',
+): Promise<LocalBlogPost[]> {
+	const entries = await loadEntries(collection);
 	return entries.map((entry) => ({
 		...mapEntryToSummary(entry),
 		entry,
