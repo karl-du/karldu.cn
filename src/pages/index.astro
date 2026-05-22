@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import IconText from '../components/IconText.astro';
 import { Image } from 'astro:assets';
 import ProfileImage from '../assets/karl-du-about.png';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
@@ -84,6 +85,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				<div>
 					<p class="eyebrow">Personal Blog</p>
 					<h1>Karl Du</h1>
+					<p class="lead">
+						<IconText name="lucide:map-pin" label="苏州" color="accent" />
+					</p>
 					<p class="lead">
 						一个 97 年的程序员，喜欢读书📚、跑步🏃‍♀️。
 					</p>

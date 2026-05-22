@@ -1,0 +1,53 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+	/** Iconify 图标名，如 "lucide:map-pin" */
+	name: string;
+	/** 文本内容；也可以通过默认 slot 传入 */
+	label?: string;
+	/** 图标尺寸（相对字号），默认 1.1em */
+	size?: string;
+	/** 图标颜色，默认继承文字颜色；可传 CSS 颜色或 "accent" */
+	color?: string;
+	/** 图标与文字间距，默认 0.4rem */
+	gap?: string;
+	/** 自定义 class */
+	class?: string;
+}
+
+const {
+	name,
+	label,
+	size = '1.1em',
+	color,
+	gap = '0.4rem',
+	class: className,
+} = Astro.props;
+
+const iconColor = color === 'accent' ? 'rgb(var(--accent))' : color;
+---
+
+<span
+	class:list={['icon-text', className]}
+	style={`--icon-size:${size};--icon-gap:${gap};${iconColor ? `--icon-color:${iconColor};` : ''}`}
+>
+	<Icon name={name} />
+	<span><slot>{label}</slot></span>
+</span>
+
+<style>
+	.icon-text {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--icon-gap);
+		line-height: 1;
+	}
+	.icon-text :global([data-icon]) {
+		width: var(--icon-size);
+		height: var(--icon-size);
+		flex-shrink: 0;
+		transform: translateY(-0.05em);
+		color: var(--icon-color, currentColor);
+	}
+</style>
